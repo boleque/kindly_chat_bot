@@ -27,8 +27,8 @@ New conversation started
 ```sh
 >>> import requests
 >>> reply = requests.post('http://0.0.0.0:8000/api/conversation/start', json={"language":"en"})
->>> r.text
-u'{"user_id":1,"message":"Hi there!"}'
+>>> r.content
+{"user_id":1,"message":"Hi there!"}
 ```
 #### Error Response
 
@@ -58,8 +58,8 @@ Chat bot returns a reply
 ```sh
 >>> import requests
 >>> reply = requests.post('http://0.0.0.0:8000/api/conversation/message/', json={"user_id":1,"message":"Do you know any robot jokes?"})
->>> reply.text
-u'{"message":"Do you know why robots take summer holidays? To charge the batteries!"}'
+>>> reply.content
+{"message":"Do you know why robots take summer holidays? To charge the batteries!"}
 
 ```
 #### Error Response
