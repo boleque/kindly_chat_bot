@@ -14,7 +14,7 @@ URL: /api/conversation/start
 
 Method: POST
 
-##### Data Parameters in JSON:
+#### Data Parameters in JSON:
 ```sh
 language String (required)
 ```
@@ -41,7 +41,7 @@ Required field is missing or wrong
 URL: /api/conversation/message
 Method: POST
 
-##### Data Parameters in JSON:
+#### Data Parameters in JSON:
 ```sh
 user_id Integer (required)
 message String (required)
