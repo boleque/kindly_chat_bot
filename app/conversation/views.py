@@ -13,23 +13,15 @@ def start_endpoint(request):
         data=json.loads(request.body.decode('utf-8'))
         )
 
-    try:
-        if serializer.is_valid(raise_exception=True):
-            conversationObj = serializer.save()
-            reply = Greeting.objects.get_greeting_reply(conversationObj.language)
-    except exceptions.ValidationError as err:
+    serializer.is_valid(raise_exception=True)
+    conversationObj = serializer.save()
+    reply = Greeting.objects.get_greeting_reply(conversationObj.language)
 
-        return response.Response(
-            data=err.get_full_details(), 
-            status=status.HTTP_400_BAD_REQUEST
-            )
-    else:
-
-        return response.Response(
-            data={
-                'user_id' : conversationObj.user_id,
-                'message' : reply.text,
-                }, 
+    return response.Response(
+        data={
+            'user_id' : conversationObj.user_id,
+            'message' : reply.text,
+            }, 
             status=status.HTTP_201_CREATED
             )
 
