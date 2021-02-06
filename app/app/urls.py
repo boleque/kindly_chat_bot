@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework.routers import SimpleRouter
+from conversation.views import start_endpoint, message_endpoint
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/conversation/start/', start_endpoint),
+    path('api/conversation/message/', message_endpoint),
 ]

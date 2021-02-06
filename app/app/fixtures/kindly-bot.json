@@ -1,6 +1,6 @@
 [
     {
-      "model": "bot_api.Greeting",
+      "model": "core.Greeting",
       "pk": "ae9c6010-85a2-4920-9ac5-35573eca5540",
       "fields": {
         "replies": {
@@ -16,7 +16,7 @@
       }
     },
     {
-        "model": "bot_api.Fallback",
+        "model": "core.Fallback",
         "pk": "bd19343d-f298-4859-8002-cca5921b05a3",
         "fields": {
             "replies": {
@@ -30,7 +30,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "722f9f24-4ded-43c1-b434-aca39d8d11a2",
         "fields": {
             "dialogue_type": "KEYWORDS",
@@ -77,7 +77,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "425206cb-003c-41e9-9795-433e46b7b5d0",
         "fields": {
             "dialogue_type": "KEYWORDS",
@@ -131,7 +131,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "4f2f9cca-4120-4654-b856-d25936cdef2c",
         "fields": {
             "parent_id": "722f9f24-4ded-43c1-b434-aca39d8d11a2",
@@ -155,7 +155,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "7aa6f2fa-5e8e-45ec-8f2a-7630adb08157",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -280,7 +280,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "c6979e1f-f202-4330-8c63-d65f3b0c941a",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -376,7 +376,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "ca0c3218-15aa-4e30-8da1-f0af73466b0b",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -444,7 +444,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "b7de7813-87f6-4f78-b335-020177fe5dc3",
         "fields": {
             "parent_id": "c6979e1f-f202-4330-8c63-d65f3b0c941a",
@@ -521,7 +521,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "930d561b-4eaf-4e30-871e-9ba41f1e89e0",
         "fields": {
             "parent_id": "c6979e1f-f202-4330-8c63-d65f3b0c941a",
@@ -602,7 +602,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "4345843d-a0e6-4045-b322-6b74fe07f738",
         "fields": {
             "parent_id": "af8a7e5b-eea0-4f44-98a2-e5ce61c6b552",
@@ -627,7 +627,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "2ac8e8a4-a3eb-4f92-8152-171dec58e505",
         "fields": {
             "parent_id": "af8a7e5b-eea0-4f44-98a2-e5ce61c6b552",
@@ -652,7 +652,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "af8a7e5b-eea0-4f44-98a2-e5ce61c6b552",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -696,7 +696,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "ab2eadfa-de21-4161-bddc-8ead22ba4055",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -756,7 +756,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "bd2ea61a-9abe-4112-83e1-47a8de65779b",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -841,7 +841,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "cb569aa3-3173-4ac0-8f2b-0f853f262ed9",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -920,7 +920,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "5827f17a-1d20-4a8e-a669-c03631b0fca3",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -987,7 +987,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "aea0e086-0773-45da-a01d-b8f6d5787a5a",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1051,7 +1051,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "d3ec086d-e997-4b7a-b597-3d6013af7cce",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1119,7 +1119,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "6bd8b35d-cd69-4195-b26e-d569b657f298",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1184,7 +1184,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "9a5e0819-ffae-4500-9f09-61757ae6f300",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1246,7 +1246,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "fe6d4ff7-b38f-43a7-9875-5309fe03dc8e",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1312,7 +1312,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "281460b1-3216-486b-b442-edc7add01c6c",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1380,7 +1380,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "b7d4ddf3-5427-4d89-97b9-f16dfe4bd161",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1432,7 +1432,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "4f395015-594c-409b-b42c-5d39dcc3ae6b",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1489,7 +1489,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "e45dc080-21fb-4705-8ea8-6c7e4cb994e1",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1541,7 +1541,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "417ecda8-984e-41f7-a72c-99c4b6a2f925",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1593,7 +1593,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "1ec97632-610f-48ea-98f6-625bef856948",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1644,7 +1644,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "cc923991-8cdf-4659-9f95-20298bfe32a6",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1703,7 +1703,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "5d8544f1-085d-4abd-a6a5-be19885f1a1c",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1760,7 +1760,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "edf54514-e4d2-4d4e-be92-87b861ce83da",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1816,7 +1816,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "63dd151a-c15b-4cbc-9930-fd1c4a9ce24b",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1869,7 +1869,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "3bbe8dc0-fecc-4d4f-ac07-dbf0eddbd1bf",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1930,7 +1930,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "d8cedb3e-148d-46dd-8608-1eb14023d9ce",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -1989,7 +1989,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "649bb4d7-655a-4616-9306-475840d44270",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -2046,7 +2046,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "fb3d42f7-c2a9-4e71-99d8-0234938dccd0",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -2105,7 +2105,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "b3372d44-36b5-409b-b5b8-44688b838dc3",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -2163,7 +2163,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "7d672be7-0a59-4411-b4d2-df590d166d74",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -2278,7 +2278,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "ea35e507-d55e-4868-8b28-c84ee678ba5e",
         "fields": {
             "dialogue_type": "SAMPLES",
@@ -2393,7 +2393,7 @@
         }
     },
     {
-        "model": "bot_api.Dialogue",
+        "model": "core.Dialogue",
         "pk": "c0d41bcc-37dc-494a-a9d4-d8ca6c50cd18",
         "fields": {
             "dialogue_type": "SAMPLES",
