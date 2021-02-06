@@ -18,7 +18,7 @@ Method: POST
 ```sh
 language String (required)
 ```
-##### Success Response
+#### Success Response
 New conversation started
 **Code**: 201
 
@@ -30,7 +30,7 @@ New conversation started
 >>> r.text
 u'{"user_id":1,"message":"Hi there!"}'
 ```
-##### Error Response
+#### Error Response
 
 Required field is missing or wrong
 **Code**: 400
@@ -48,7 +48,7 @@ message String (required)
 
 ```
 
-##### Success Response
+#### Success Response
 
 Chat bot returns a reply
 **Code**: 200
@@ -62,7 +62,7 @@ Chat bot returns a reply
 u'{"message":"Do you know why robots take summer holidays? To charge the batteries!"}'
 
 ```
-##### Error Response
+#### Error Response
 
 User id doesn't exist
 **Code**: 404
