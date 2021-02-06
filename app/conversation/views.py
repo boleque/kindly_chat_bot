@@ -14,6 +14,7 @@ def start_endpoint(request):
     )
 
     serializer.is_valid(raise_exception=True)
+
     conversationObj = serializer.save()
     reply = Greeting.objects.get_greeting_reply(conversationObj.language)
 
@@ -37,7 +38,6 @@ def message_endpoint(request):
     validated_data = serializer.validated_data
     conversationObj = get_object_or_404(Conversation.objects.all(), user_id=validated_data['user_id'])
     user_language = conversationObj.language
-
     reply = Dialogue.objects.get_dialogue_reply(
                 message=validated_data['message'],
                 language=user_language,

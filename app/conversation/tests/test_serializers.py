@@ -49,7 +49,7 @@ class SerializersTests(TestCase):
         serializer = KeepConversationSerializer(data=data)
         self.assertFalse(serializer.is_valid())
 
-    def test_negative_user_id_invalid_keep_conversation_serializer(self):
+    def test_invalid_user_id_invalid_keep_conversation_serializer(self):
         data = {
             "user_id": -1,
             "message": "Do you know and robot jokes?"
