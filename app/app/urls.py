@@ -20,6 +20,6 @@ from conversation.views import start_endpoint, message_endpoint
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/conversation/start/', start_endpoint),
-    path('api/conversation/message/', message_endpoint),
+    path('api/conversation/start', start_endpoint),
+    path('api/conversation/message', message_endpoint),
 ]
