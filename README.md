@@ -20,6 +20,7 @@ language String (required)
 ##### Success Response
 New conversation started
 **Code**: 201
+
 **Content**: unique id in response in JSON format
 
 ```sh
@@ -31,6 +32,7 @@ u'{"user_id":1,"message":"Hi there!"}'
 ##### Error Response
 Required field is missing or wrong
 **Code**: 400
+
 **Content**: {"language":[{"message":"This field is required.","code":"required"}]}'
 
 #### Continue conversation
@@ -40,6 +42,7 @@ Method: POST
 ##### Success Response
 Chat bot returns a reply
 **Code**: 200
+
 **Content**: reply in JSON format
 
 ```sh
@@ -52,10 +55,12 @@ u'{"message":"Do you know why robots take summer holidays? To charge the batteri
 ##### Error Response
 User id doesn't exist
 **Code**: 404
+
 **Content**: wrong user id
 
 Required field is missing or wrong
 **Code**: 400
+
 **Content**: {"message":[{"message":"This field is required.","code":"required"}]}'
 
 ####  Build&Run REST API service
