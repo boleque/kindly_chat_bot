@@ -57,7 +57,7 @@ Chat bot returns a reply
 
 ```sh
 >>> import requests
->>> reply = requests.post('http://0.0.0.0:8000/api/conversation/message/', json={"user_id":1,"message":"Do you know any robot jokes?"})
+>>> reply = requests.post('http://0.0.0.0:8000/api/conversation/message', json={"user_id":1,"message":"Do you know any robot jokes?"})
 >>> reply.content
 {"message":"Do you know why robots take summer holidays? To charge the batteries!"}
 
