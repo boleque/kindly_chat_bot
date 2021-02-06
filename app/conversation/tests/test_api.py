@@ -20,13 +20,13 @@ class PublicConverationApiTest(TestCase):
     def test_start_endpoint_http_201(self):
         input_data = {'language':'en'}
     
-        response = self.client.post('/api/conversation/start/', json.dumps(input_data), content_type='json')
+        response = self.client.post('/api/conversation/start', json.dumps(input_data), content_type='json')
         self.assertEqual(response.status_code, 201)
 
     def test_start_endpoint_http_400(self):
         input_data = {'message':'Hello'}
 
-        response = self.client.post('/api/conversation/start/', json.dumps(input_data), content_type='json')
+        response = self.client.post('/api/conversation/start', json.dumps(input_data), content_type='json')
         self.assertEqual(response.status_code, 400)
 
     # --------------------------------------------------
@@ -37,7 +37,7 @@ class PublicConverationApiTest(TestCase):
             'message':'Do you know any robot jokes?'
             }
 
-        response = self.client.post('/api/conversation/message/', json.dumps(input_data), content_type='json')
+        response = self.client.post('/api/conversation/message', json.dumps(input_data), content_type='json')
         self.assertEqual(response.status_code, 200)
         self.assertTrue(response.data['message'] in [
             "Do you know why robots take summer holidays? To charge the batteries!",
@@ -53,7 +53,7 @@ class PublicConverationApiTest(TestCase):
             'message':'Hello'
             }
 
-        response = self.client.post('/api/conversation/message/', json.dumps(input_data), content_type='json')
+        response = self.client.post('/api/conversation/message', json.dumps(input_data), content_type='json')
         self.assertEqual(response.status_code, 404)
 
     def test_message_endpoint_http_400(self):
@@ -61,5 +61,5 @@ class PublicConverationApiTest(TestCase):
             'message':'I hope you know a couple of robot jokes?'
             }
 
-        response = self.client.post('/api/conversation/message/', json.dumps(input_data), content_type='json')
+        response = self.client.post('/api/conversation/message', json.dumps(input_data), content_type='json')
         self.assertEqual(response.status_code, 400)
