@@ -16,6 +16,7 @@ class PublicConverationApiTest(TestCase):
         model = Conversation.objects.create(
             language='en'
         )
+        self.user_id = model.user_id
 
     def test_start_endpoint_http_201(self):
         input_data = {'language':'en'}
@@ -33,7 +34,7 @@ class PublicConverationApiTest(TestCase):
 
     def test_message_endpoint_http_200(self):
         input_data = {
-            'user_id': 3, 
+            'user_id': self.user_id, 
             'message':'Do you know any robot jokes?'
             }
 
@@ -49,7 +50,7 @@ class PublicConverationApiTest(TestCase):
 
     def test_message_endpoint_http_404(self):
         input_data = {
-            'user_id': 250, 
+            'user_id': 2500, 
             'message':'Hello'
             }
 
