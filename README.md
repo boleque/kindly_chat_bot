@@ -9,6 +9,7 @@ Simple chatbot, that able to reply on four types of content:
 ## REST API
 
 #### Starting conversation
+
 URL: /api/conversation/start
 
 Method: POST
@@ -30,6 +31,7 @@ New conversation started
 u'{"user_id":1,"message":"Hi there!"}'
 ```
 ##### Error Response
+
 Required field is missing or wrong
 **Code**: 400
 
@@ -39,7 +41,15 @@ Required field is missing or wrong
 URL: /api/conversation/message
 Method: POST
 
+##### Data Parameters in JSON:
+```sh
+user_id Integer (required)
+message String (required)
+
+```
+
 ##### Success Response
+
 Chat bot returns a reply
 **Code**: 200
 
@@ -53,6 +63,7 @@ u'{"message":"Do you know why robots take summer holidays? To charge the batteri
 
 ```
 ##### Error Response
+
 User id doesn't exist
 **Code**: 404
 
@@ -64,6 +75,7 @@ Required field is missing or wrong
 **Content**: {"message":[{"message":"This field is required.","code":"required"}]}'
 
 ####  Build&Run REST API service
+
 ##### Build app
 ```sh
 docker-compose build
